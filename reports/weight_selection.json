@@ -1,0 +1,173 @@
+{
+  "_note": "REGENERATED on the partial chunk-01 stream (2,106 objects) and therefore NOT the record behind reports/metrics.json. metrics.json (validation AP 0.2236, selected neighbour_entropy 0.1) is authoritative. This file records a re-run of the same search against a different stream: validation AP 0.2275, neighbour_entropy 0.0. The density-ratio reweighting depends on the stream, so the two selections legitimately differ. configs/weights_v2.yaml has been restored to match metrics.json. Re-running scripts/02_train.py against the full 112,930-object stream will overwrite this file with the original record.",
+  "baseline_v1_ap": 0.1546,
+  "baseline_v1_auc": 0.7475,
+  "history_top10": [
+    {
+      "ap": 0.22754787454412706,
+      "auc": 0.8197365483366823,
+      "weights": {
+        "anomaly_score": 0.0,
+        "cc_weighted": 0.35,
+        "family_misfit": 0.0,
+        "neighbor_entropy": 0.0,
+        "novelty_gap": 0.0,
+        "physics_gap": 0.0,
+        "prior_entropy": 0.0,
+        "simplex_novelty": 0.4,
+        "taxonomy_gap": 1.0
+      }
+    },
+    {
+      "ap": 0.2266216677283394,
+      "auc": 0.8231390935476668,
+      "weights": {
+        "anomaly_score": 0.0,
+        "cc_weighted": 0.35,
+        "family_misfit": 0.0,
+        "neighbor_entropy": 0.1,
+        "novelty_gap": 0.0,
+        "physics_gap": 0.0,
+        "prior_entropy": 0.0,
+        "simplex_novelty": 0.4,
+        "taxonomy_gap": 1.0
+      }
+    },
+    {
+      "ap": 0.22518247622626159,
+      "auc": 0.8215762446974771,
+      "weights": {
+        "anomaly_score": 0.0,
+        "cc_weighted": 0.35,
+        "family_misfit": 0.0,
+        "neighbor_entropy": 0.1,
+        "novelty_gap": 0.0,
+        "physics_gap": 0.0,
+        "prior_entropy": 0.1,
+        "simplex_novelty": 0.4,
+        "taxonomy_gap": 1.0
+      }
+    },
+    {
+      "ap": 0.22486095717005003,
+      "auc": 0.816467961598571,
+      "weights": {
+        "anomaly_score": 0.0,
+        "cc_weighted": 0.35,
+        "family_misfit": 0.0,
+        "neighbor_entropy": 0.0,
+        "novelty_gap": 0.0,
+        "physics_gap": 0.0,
+        "prior_entropy": 0.25,
+        "simplex_novelty": 0.4,
+        "taxonomy_gap": 1.0
+      }
+    },
+    {
+      "ap": 0.2235704528360353,
+      "auc": 0.8183165885242242,
+      "weights": {
+        "anomaly_score": 0.0,
+        "cc_weighted": 0.35,
+        "family_misfit": 0.0,
+        "neighbor_entropy": 0.0,
+        "novelty_gap": 0.0,
+        "physics_gap": 0.0,
+        "prior_entropy": 0.1,
+        "simplex_novelty": 0.4,
+        "taxonomy_gap": 1.0
+      }
+    },
+    {
+      "ap": 0.22274136463937871,
+      "auc": 0.8179504353650369,
+      "weights": {
+        "anomaly_score": 0.0,
+        "cc_weighted": 0.35,
+        "family_misfit": 0.0,
+        "neighbor_entropy": 0.0,
+        "novelty_gap": 0.05,
+        "physics_gap": 0.0,
+        "prior_entropy": 0.0,
+        "simplex_novelty": 0.4,
+        "taxonomy_gap": 1.0
+      }
+    },
+    {
+      "ap": 0.22257981729451445,
+      "auc": 0.8150926546104043,
+      "weights": {
+        "anomaly_score": 0.0,
+        "cc_weighted": 0.35,
+        "family_misfit": 0.0,
+        "neighbor_entropy": 0.0,
+        "novelty_gap": 0.05,
+        "physics_gap": 0.0,
+        "prior_entropy": 0.25,
+        "simplex_novelty": 0.4,
+        "taxonomy_gap": 1.0
+      }
+    },
+    {
+      "ap": 0.22242025341414665,
+      "auc": 0.8283366822951552,
+      "weights": {
+        "anomaly_score": 0.0,
+        "cc_weighted": 0.35,
+        "family_misfit": 0.0,
+        "neighbor_entropy": 0.1,
+        "novelty_gap": 0.0,
+        "physics_gap": 0.0,
+        "prior_entropy": 0.0,
+        "simplex_novelty": 0.2,
+        "taxonomy_gap": 1.0
+      }
+    },
+    {
+      "ap": 0.22233289403673082,
+      "auc": 0.821102924759991,
+      "weights": {
+        "anomaly_score": 0.0,
+        "cc_weighted": 0.35,
+        "family_misfit": 0.0,
+        "neighbor_entropy": 0.1,
+        "novelty_gap": 0.05,
+        "physics_gap": 0.0,
+        "prior_entropy": 0.0,
+        "simplex_novelty": 0.4,
+        "taxonomy_gap": 1.0
+      }
+    },
+    {
+      "ap": 0.22185423033073307,
+      "auc": 0.8195757981692343,
+      "weights": {
+        "anomaly_score": 0.0,
+        "cc_weighted": 0.35,
+        "family_misfit": 0.0,
+        "neighbor_entropy": 0.1,
+        "novelty_gap": 0.0,
+        "physics_gap": 0.0,
+        "prior_entropy": 0.25,
+        "simplex_novelty": 0.4,
+        "taxonomy_gap": 1.0
+      }
+    }
+  ],
+  "n_combinations": 216,
+  "n_test": 114589,
+  "n_validation": 1568,
+  "selected_weights": {
+    "anomaly_score": 0.0,
+    "cc_weighted": 0.35,
+    "family_misfit": 0.0,
+    "neighbor_entropy": 0.0,
+    "novelty_gap": 0.0,
+    "physics_gap": 0.0,
+    "prior_entropy": 0.0,
+    "simplex_novelty": 0.4,
+    "taxonomy_gap": 1.0
+  },
+  "validation_ap": 0.2275,
+  "validation_auc": 0.8197
+}

@@ -1,0 +1,84 @@
+{
+  "cne_version": "2.0.0",
+  "codename": "domain-matched prior, hardened evaluation",
+  "elapsed_s": 520.9,
+  "leakage": {
+    "locked_n": 1659,
+    "locked_split": "test_matched",
+    "stages": {
+      "weight_search": 1568
+    },
+    "violations": {}
+  },
+  "libraries": {
+    "fastapi": "0.141.1",
+    "lightgbm": "4.7.0",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "platform": "Linux-6.1.158+-x86_64-with-glibc2.41",
+    "pyarrow": "25.0.1",
+    "python": "3.13.14",
+    "scipy": "1.17.1",
+    "sklearn": "1.6.1"
+  },
+  "prior": {
+    "classes": [
+      "15",
+      "16",
+      "42",
+      "52",
+      "53",
+      "62",
+      "65",
+      "67",
+      "88",
+      "90",
+      "92",
+      "95"
+    ],
+    "cv_accuracy": 0.821,
+    "cv_roc_auc_macro": 0.9664,
+    "domain": "matched",
+    "n_classes": 12,
+    "n_folds": 4,
+    "n_objects": 4621
+  },
+  "seed": 42,
+  "selected_weights": {
+    "anomaly_score": 0.0,
+    "cc_weighted": 0.35,
+    "family_misfit": 0.0,
+    "neighbor_entropy": 0.0,
+    "novelty_gap": 0.0,
+    "physics_gap": 0.0,
+    "prior_entropy": 0.0,
+    "simplex_novelty": 0.4,
+    "taxonomy_gap": 1.0
+  },
+  "splits": {
+    "prior_fit": 4621,
+    "test_fullscale": 112930,
+    "test_matched": 1659,
+    "validation": 1568
+  },
+  "weight_search": {
+    "baseline_v1_ap": 0.1546,
+    "baseline_v1_auc": 0.7475,
+    "n_combinations": 216,
+    "n_test": 114589,
+    "n_validation": 1568,
+    "selected_weights": {
+      "anomaly_score": 0.0,
+      "cc_weighted": 0.35,
+      "family_misfit": 0.0,
+      "neighbor_entropy": 0.0,
+      "novelty_gap": 0.0,
+      "physics_gap": 0.0,
+      "prior_entropy": 0.0,
+      "simplex_novelty": 0.4,
+      "taxonomy_gap": 1.0
+    },
+    "validation_ap": 0.2275,
+    "validation_auc": 0.8197
+  }
+}

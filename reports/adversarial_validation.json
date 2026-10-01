@@ -1,0 +1,61 @@
+{
+  "roc_auc": 0.5437642891123013,
+  "n_reference": 4621,
+  "n_target": 1659,
+  "n_features": 401,
+  "top_features": [
+    {
+      "feature": "u_t_centroid",
+      "importance": 69.6
+    },
+    {
+      "feature": "g_curvature",
+      "importance": 60.2
+    },
+    {
+      "feature": "y_flux_kurt",
+      "importance": 59.2
+    },
+    {
+      "feature": "u_flux_kurt",
+      "importance": 55.2
+    },
+    {
+      "feature": "col_dt_umg",
+      "importance": 54.8
+    },
+    {
+      "feature": "col_zmy",
+      "importance": 53.6
+    },
+    {
+      "feature": "y_flux_skew",
+      "importance": 53.4
+    },
+    {
+      "feature": "y_variability",
+      "importance": 52.2
+    },
+    {
+      "feature": "u_slope",
+      "importance": 51.0
+    },
+    {
+      "feature": "r_variability",
+      "importance": 48.4
+    },
+    {
+      "feature": "col_temp_proxy",
+      "importance": 48.0
+    },
+    {
+      "feature": "u_flux_min",
+      "importance": 47.2
+    }
+  ],
+  "novelty_correlation": 0.5794296821512908,
+  "novelty_correlation_spearman": 0.2959482871767948,
+  "verdict": "populations are effectively indistinguishable (AUC 0.5438): within the matched split the reference and target cannot be told apart, so novelty there is not a proxy for domain shift. The novelty-vs-domain correlation is NOT established - see caveat.",
+  "caveat": "The separability AUC uses all 1,659 locked test_matched objects and is reliable. The novelty correlation uses only the 400 objects that reached the persisted review queue - a top-400 truncation that is selection-biased by construction, so r=+0.579 must NOT be read as evidence that the ranking is domain-driven. Recomputing it needs novelty scores for all 1,659 objects, which requires re-running 03_evaluate.py. Treat the correlation as unmeasured until then.",
+  "novelty_coverage": "400/1659"
+}

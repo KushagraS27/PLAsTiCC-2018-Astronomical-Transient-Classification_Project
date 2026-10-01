@@ -1,0 +1,116 @@
+# Cosmic Novelty Engine - single source of hyperparameters.
+#
+# `baseline_v1` reproduces the frozen CNE v1.0.0 configuration.
+# `v2` is the production configuration: identical ranking core, hardened
+# evaluation, domain matching, uncertainty propagation and abstention.
+#
+# Changing anything here changes the run fingerprint in reports/manifests/.
+
+meta:
+  seed: 42
+  config_id: cne-default
+
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  artefacts_dir: data/artefacts
+  reports_dir: reports
+  train_metadata: plasticc_train_metadata.csv.gz
+  train_lightcurves: plasticc_train_lightcurves.csv.gz
+  test_metadata: plasticc_test_metadata.csv.gz
+  # A list: chunk 01 is ~33k objects / 190 held-out novel objects at a realistic
+  # 0.58% base rate. More chunks = more held-out objects = tighter CIs.
+  test_lightcurves:
+    - plasticc_test_lightcurves_01.csv.gz
+    - plasticc_test_lightcurves_02.csv.gz
+    - plasticc_test_lightcurves_03.csv.gz
+  read_chunk_rows: 2000000
+
+features:
+  # Global (all-band) features use the lc_ prefix. The g_ prefix is reserved:
+  # using it for global features collides with the g-band namespace (v1 bug).
+  global_prefix: lc_
+  quality_prefix: q_
+  physics_prefix: phys_
+  uncertainty_prefix: unc_
+  host_prefix: host_
+  colour_prefix: col_
+  # Distance-sensitive features are Monte-Carlo propagated over the photometric
+  # redshift posterior (CNE v2, prompt 06).
+  mc_redshift_draws: 24
+  min_detections_for_features: 1
+
+quality:
+  # Quality is suppress-only: it multiplies the novelty score down and can never
+  # raise astrophysical novelty.
+  enabled: true
+  exponent: 0.5
+  max_negative_flux_fraction: 0.35
+  min_median_snr: 5.0      # median SNR among DETECTIONS only
+  min_detections: 8
+  max_single_band_fraction: 0.90
+  low_quality_score: 0.25
+
+prior:
+  n_folds: 4
+  n_estimators: 300   # 12-class multiclass trains 12 trees per round
+  learning_rate: 0.05
+  num_leaves: 31
+  min_child_samples: 20
+  subsample: 0.85
+  colsample_bytree: 0.85
+  class_balanced: true
+  # Cap on the reference population handed to the O(n*d) unsupervised ensemble
+  # only. The known-physics prior always sees the full reference.
+  max_ens_ref: 3500
+
+similarity:
+  k_neighbours: 25
+  n_analogs: 5
+
+uncertainty:
+  exponent: 0.25
+  n_bootstrap_models: 5
+  abstain_quantile: 0.97   # abstain the most uncertain 3% of the scored stream
+  abstain_min_quality: 0.30
+
+ranking:
+  agreement_bonus: 0.15
+  tiers:
+    critical: 0.95
+    high: 0.85
+    moderate: 0.60
+
+# Evidence-channel weights. Every weight is set from MEASURED channel power;
+# channels measured at/below chance stay computed (audit value) but weighted 0.
+weights:
+  taxonomy_gap: 1.00
+  simplex_novelty: 0.20
+  novelty_gap: 0.05
+  prior_entropy: 0.0
+  neighbor_entropy: 0.0
+  anomaly_score: 0.0
+  physics_gap: 0.0
+  cc_weighted: 0.0
+  family_misfit: 0.0
+
+evaluation:
+  precision_k: [10, 20, 50, 100]
+  recall_k: [200, 500]
+  bootstrap_draws: 1000
+  min_n_for_class_report: 30
+  base_rates: [0.10, 0.01, 0.001, 0.0001]
+
+# CNE v2 feature flags. Each one isolates an upgrade so it can be ablated or
+# rolled back without touching the v1 code path.
+v2:
+  locked_test_manifest: true
+  nested_weight_selection: true
+  domain_matched_reference: true
+  base_rate_stress: true
+  artifact_safety_suite: true
+  uncertainty_propagation: true
+  abstention: true
+  domain_shift_monitor: true
+  replay_adapter: true
+  multimodal_adapter: false   # experimental; no image/spectrum branch promoted

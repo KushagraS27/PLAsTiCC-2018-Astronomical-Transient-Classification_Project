@@ -1,0 +1,2408 @@
+{
+  "ablation_fullscale": [
+    {
+      "P@20": 0.5,
+      "P@50": 0.38,
+      "average_precision": 0.03455267653580649,
+      "configuration": "full",
+      "roc_auc": 0.5153679052404052
+    },
+    {
+      "P@20": 0.55,
+      "P@50": 0.26,
+      "average_precision": 0.03089412247329655,
+      "configuration": "without simplex_novelty",
+      "roc_auc": 0.48510258858049093
+    },
+    {
+      "P@20": 0.45,
+      "P@50": 0.38,
+      "average_precision": 0.03414929648593461,
+      "configuration": "without neighbor_entropy",
+      "roc_auc": 0.5135714441970037
+    },
+    {
+      "P@20": 0.3,
+      "P@50": 0.24,
+      "average_precision": 0.025869714479609167,
+      "configuration": "without cc_weighted",
+      "roc_auc": 0.46608810946929646
+    },
+    {
+      "P@20": 0.65,
+      "P@50": 0.4,
+      "average_precision": 0.034054194674274285,
+      "configuration": "with prior_entropy (+0.2)",
+      "roc_auc": 0.5028687929758483
+    },
+    {
+      "P@20": 0.6,
+      "P@50": 0.44,
+      "average_precision": 0.035897679956273146,
+      "configuration": "with anomaly_score (+0.2)",
+      "roc_auc": 0.5135623282841733
+    },
+    {
+      "P@20": 0.5,
+      "P@50": 0.32,
+      "average_precision": 0.035854442408285,
+      "configuration": "with physics_gap (+0.2)",
+      "roc_auc": 0.5410536461301522
+    },
+    {
+      "P@20": 0.5,
+      "P@50": 0.3,
+      "average_precision": 0.03367949733508578,
+      "configuration": "with family_misfit (+0.2)",
+      "roc_auc": 0.514627914977882
+    },
+    {
+      "P@20": 0.15,
+      "P@50": 0.1,
+      "average_precision": 0.02277344779835568,
+      "configuration": "taxonomy_gap only",
+      "roc_auc": 0.43102179906097216
+    }
+  ],
+  "ablation_matched": [
+    {
+      "P@20": 0.95,
+      "P@50": 0.8,
+      "average_precision": 0.539941607576304,
+      "configuration": "full",
+      "roc_auc": 0.8155550834920224
+    },
+    {
+      "P@20": 1.0,
+      "P@50": 0.74,
+      "average_precision": 0.5290399851675998,
+      "configuration": "without simplex_novelty",
+      "roc_auc": 0.8305844062241577
+    },
+    {
+      "P@20": 0.95,
+      "P@50": 0.78,
+      "average_precision": 0.5337178198985444,
+      "configuration": "without neighbor_entropy",
+      "roc_auc": 0.8082035369360209
+    },
+    {
+      "P@20": 0.9,
+      "P@50": 0.68,
+      "average_precision": 0.4434203250289333,
+      "configuration": "without cc_weighted",
+      "roc_auc": 0.7528962362205919
+    },
+    {
+      "P@20": 1.0,
+      "P@50": 0.82,
+      "average_precision": 0.5408646806234483,
+      "configuration": "with prior_entropy (+0.2)",
+      "roc_auc": 0.8127479914118156
+    },
+    {
+      "P@20": 0.95,
+      "P@50": 0.88,
+      "average_precision": 0.5721041038186925,
+      "configuration": "with anomaly_score (+0.2)",
+      "roc_auc": 0.8349126387424228
+    },
+    {
+      "P@20": 0.9,
+      "P@50": 0.76,
+      "average_precision": 0.5363748583249638,
+      "configuration": "with physics_gap (+0.2)",
+      "roc_auc": 0.8248146939890296
+    },
+    {
+      "P@20": 0.95,
+      "P@50": 0.86,
+      "average_precision": 0.586744614072517,
+      "configuration": "with family_misfit (+0.2)",
+      "roc_auc": 0.8651609525904909
+    },
+    {
+      "P@20": 0.8,
+      "P@50": 0.58,
+      "average_precision": 0.40956783065853214,
+      "configuration": "taxonomy_gap only",
+      "roc_auc": 0.7675879492295671
+    }
+  ],
+  "benchmarks": {
+    "fullscale_domain_matched": {
+      "benchmark": "fullscale_domain_matched",
+      "channel_power": [
+        {
+          "average_precision": 0.04811126270036231,
+          "channel": "simplex_novelty",
+          "roc_auc": 0.6534755978732709
+        },
+        {
+          "average_precision": 0.07175438740532553,
+          "channel": "cc_weighted",
+          "roc_auc": 0.6177977266076373
+        },
+        {
+          "average_precision": 0.04332363792590603,
+          "channel": "physics_gap",
+          "roc_auc": 0.607947492258601
+        },
+        {
+          "average_precision": 0.030391017519209144,
+          "channel": "neighbor_entropy",
+          "roc_auc": 0.5370019344939152
+        },
+        {
+          "average_precision": 0.032620935427213296,
+          "channel": "family_misfit",
+          "roc_auc": 0.4958693225516388
+        },
+        {
+          "average_precision": 0.02521060132513952,
+          "channel": "anomaly_score",
+          "roc_auc": 0.4617629577228952
+        },
+        {
+          "average_precision": 0.022580863863052886,
+          "channel": "novelty_gap",
+          "roc_auc": 0.4333731946526563
+        },
+        {
+          "average_precision": 0.02277344779835568,
+          "channel": "taxonomy_gap",
+          "roc_auc": 0.43102179906097216
+        },
+        {
+          "average_precision": 0.028780173942219982,
+          "channel": "prior_entropy",
+          "roc_auc": 0.4268004157452646
+        }
+      ],
+      "domain_match": {
+        "per_covariate": {
+          "lc_n_det": {
+            "ks": 0.2556,
+            "psi": 0.35,
+            "ref_median": 11.0,
+            "stream_median": 5.0
+          },
+          "lc_peak_mag": {
+            "ks": 0.3895,
+            "psi": 0.8204,
+            "ref_median": 21.8569,
+            "stream_median": 22.732
+          },
+          "lc_snr_max": {
+            "ks": 0.3311,
+            "psi": 0.6256,
+            "ref_median": 31.3012,
+            "stream_median": 13.3237
+          },
+          "lc_t_span": {
+            "ks": 0.0443,
+            "psi": 0.0126,
+            "ref_median": 901.7852,
+            "stream_median": 898.7227
+          },
+          "phys_distmod": {
+            "ks": 0.3762,
+            "psi": 0.7446,
+            "ref_median": 40.203,
+            "stream_median": 42.382
+          },
+          "phys_z": {
+            "ks": 0.3761,
+            "psi": 0.7446,
+            "ref_median": 0.221,
+            "stream_median": 0.524
+          },
+          "q_det_frac": {
+            "ks": 0.2988,
+            "psi": 0.4697,
+            "ref_median": 0.0734,
+            "stream_median": 0.0312
+          },
+          "q_n_bands": {
+            "ks": 0.0,
+            "psi": 0.0,
+            "ref_median": 6.0,
+            "stream_median": 6.0
+          }
+        },
+        "score": 0.0,
+        "status": "abstain",
+        "strategy": "density_ratio",
+        "thresholds": {
+          "psi_abstain": 0.25,
+          "psi_matched": 0.1
+        }
+      },
+      "false_positive_audit": {
+        "k": 100,
+        "mean_quality": 0.9955863316910609,
+        "mean_uncertainty": 0.346154480649015,
+        "min_quality": 0.8961038930075509,
+        "n": 100,
+        "n_abstained": 19,
+        "n_false_positives": 71,
+        "n_low_quality": 0,
+        "tiers": {
+          "critical": 7,
+          "high": 41,
+          "moderate": 52
+        }
+      },
+      "metrics": {
+        "average_precision": 0.037299487330935494,
+        "base_rate": 0.027,
+        "ci": {
+          "P@10": {
+            "high": 0.9,
+            "low": 0.3
+          },
+          "P@100": {
+            "high": 0.4,
+            "low": 0.21
+          },
+          "P@20": {
+            "high": 0.7,
+            "low": 0.25
+          },
+          "P@50": {
+            "high": 0.52,
+            "low": 0.24
+          },
+          "average_precision": {
+            "high": 0.041802752446840216,
+            "low": 0.03375079816819223
+          },
+          "roc_auc": {
+            "high": 0.5617849274511881,
+            "low": 0.5426253860450302
+          }
+        },
+        "lift_at_k": {
+          "lift@10": 25.901376146788987,
+          "lift@100": 10.730570117955438,
+          "lift@20": 16.650884665792923,
+          "lift@50": 14.060747051114022
+        },
+        "n_novel": 3052,
+        "n_objects": 112930,
+        "precision_at_k": {
+          "P@10": 0.7,
+          "P@100": 0.29,
+          "P@20": 0.45,
+          "P@50": 0.38
+        },
+        "recall_at_k": {
+          "R@200": 0.014416775884665793,
+          "R@500": 0.019331585845347315
+        },
+        "roc_auc": 0.5524691635238387
+      },
+      "n_abstained": 35515,
+      "per_class": [
+        {
+          "class_code": 6,
+          "class_name": "muLens-Single",
+          "enrichment": 71.44551020408163,
+          "held_out": true,
+          "in_top200": 31,
+          "low_n_warning": false,
+          "n": 245,
+          "recall@200": 0.12653061224489795
+        },
+        {
+          "class_code": 991,
+          "class_name": "muLens-Binary",
+          "enrichment": 58.595754716981126,
+          "held_out": true,
+          "in_top200": 11,
+          "low_n_warning": false,
+          "n": 106,
+          "recall@200": 0.10377358490566038
+        },
+        {
+          "class_code": 95,
+          "class_name": "SLSN-I",
+          "enrichment": 5.674874371859296,
+          "held_out": false,
+          "in_top200": 28,
+          "low_n_warning": false,
+          "n": 2786,
+          "recall@200": 0.010050251256281407
+        },
+        {
+          "class_code": 88,
+          "class_name": "AGN",
+          "enrichment": 4.256620780072108,
+          "held_out": false,
+          "in_top200": 23,
+          "low_n_warning": false,
+          "n": 3051,
+          "recall@200": 0.0075385119632907244
+        },
+        {
+          "class_code": 53,
+          "class_name": "Mira",
+          "enrichment": 3.8152027027027025,
+          "held_out": false,
+          "in_top200": 2,
+          "low_n_warning": false,
+          "n": 296,
+          "recall@200": 0.006756756756756757
+        },
+        {
+          "class_code": 994,
+          "class_name": "PISN",
+          "enrichment": 2.5207589285714285,
+          "held_out": true,
+          "in_top200": 1,
+          "low_n_warning": false,
+          "n": 224,
+          "recall@200": 0.004464285714285714
+        },
+        {
+          "class_code": 67,
+          "class_name": "SNIa-91bg",
+          "enrichment": 1.6661803278688523,
+          "held_out": false,
+          "in_top200": 9,
+          "low_n_warning": false,
+          "n": 3050,
+          "recall@200": 0.0029508196721311475
+        },
+        {
+          "class_code": 992,
+          "class_name": "ILOT",
+          "enrichment": 1.5555096418732781,
+          "held_out": true,
+          "in_top200": 1,
+          "low_n_warning": false,
+          "n": 363,
+          "recall@200": 0.0027548209366391185
+        },
+        {
+          "class_code": 90,
+          "class_name": "SNIa",
+          "enrichment": 0.8497461871925608,
+          "held_out": false,
+          "in_top200": 67,
+          "low_n_warning": false,
+          "n": 44521,
+          "recall@200": 0.0015049077963208374
+        },
+        {
+          "class_code": 52,
+          "class_name": "SNIax",
+          "enrichment": 0.4846781115879828,
+          "held_out": false,
+          "in_top200": 3,
+          "low_n_warning": false,
+          "n": 3495,
+          "recall@200": 0.0008583690987124463
+        },
+        {
+          "class_code": 15,
+          "class_name": "TDE",
+          "enrichment": 0.41065454545454544,
+          "held_out": false,
+          "in_top200": 2,
+          "low_n_warning": false,
+          "n": 2750,
+          "recall@200": 0.0007272727272727272
+        },
+        {
+          "class_code": 62,
+          "class_name": "SNIbc",
+          "enrichment": 0.4073953823953824,
+          "held_out": false,
+          "in_top200": 4,
+          "low_n_warning": false,
+          "n": 5544,
+          "recall@200": 0.0007215007215007215
+        },
+        {
+          "class_code": 92,
+          "class_name": "RRL",
+          "enrichment": 0.28488900100908177,
+          "held_out": false,
+          "in_top200": 2,
+          "low_n_warning": false,
+          "n": 3964,
+          "recall@200": 0.0005045408678102926
+        },
+        {
+          "class_code": 42,
+          "class_name": "SNII",
+          "enrichment": 0.2582659157828536,
+          "held_out": false,
+          "in_top200": 16,
+          "low_n_warning": false,
+          "n": 34981,
+          "recall@200": 0.00045739115519853634
+        },
+        {
+          "class_code": 65,
+          "class_name": "M-dwarf",
+          "enrichment": 0.0,
+          "held_out": false,
+          "in_top200": 0,
+          "low_n_warning": false,
+          "n": 2749,
+          "recall@200": 0.0
+        },
+        {
+          "class_code": 64,
+          "class_name": "KN",
+          "enrichment": 0.0,
+          "held_out": true,
+          "in_top200": 0,
+          "low_n_warning": true,
+          "n": 27,
+          "recall@200": 0.0
+        },
+        {
+          "class_code": 16,
+          "class_name": "EB",
+          "enrichment": 0.0,
+          "held_out": false,
+          "in_top200": 0,
+          "low_n_warning": false,
+          "n": 2691,
+          "recall@200": 0.0
+        },
+        {
+          "class_code": 993,
+          "class_name": "CaRT",
+          "enrichment": 0.0,
+          "held_out": true,
+          "in_top200": 0,
+          "low_n_warning": false,
+          "n": 2087,
+          "recall@200": 0.0
+        }
+      ],
+      "protocol": "train reference reweighted by capped density ratio to the stream domain",
+      "reference_build": {
+        "effective_sample_size": 2481.6797915532998,
+        "ess_fraction": 0.5370438847767366,
+        "n_reference": 4621,
+        "strategy": "density_ratio",
+        "weight_max": 5.0,
+        "weight_min": 0.2
+      },
+      "tier_counts": {
+        "critical": 7,
+        "high": 41,
+        "moderate": 3648,
+        "routine": 109234
+      },
+      "weights": {
+        "cc_weighted": 0.35,
+        "neighbor_entropy": 0.1,
+        "simplex_novelty": 0.4,
+        "taxonomy_gap": 1.0
+      }
+    },
+    "fullscale_mismatched": {
+      "benchmark": "fullscale_mismatched",
+      "channel_power": [
+        {
+          "average_precision": 0.043641715462886574,
+          "channel": "physics_gap",
+          "roc_auc": 0.6695760727189934
+        },
+        {
+          "average_precision": 0.04100274665318141,
+          "channel": "cc_weighted",
+          "roc_auc": 0.6491042209640493
+        },
+        {
+          "average_precision": 0.03690107320651631,
+          "channel": "taxonomy_gap",
+          "roc_auc": 0.5840635367375282
+        },
+        {
+          "average_precision": 0.03690107320651631,
+          "channel": "prior_entropy",
+          "roc_auc": 0.5840635367375282
+        },
+        {
+          "average_precision": 0.03690107320651631,
+          "channel": "novelty_gap",
+          "roc_auc": 0.5840635367375282
+        },
+        {
+          "average_precision": 0.027699678365972792,
+          "channel": "neighbor_entropy",
+          "roc_auc": 0.5141710234587118
+        },
+        {
+          "average_precision": 0.02739843402928196,
+          "channel": "anomaly_score",
+          "roc_auc": 0.5035049432401579
+        },
+        {
+          "average_precision": 0.02702559107411671,
+          "channel": "family_misfit",
+          "roc_auc": 0.5
+        },
+        {
+          "average_precision": 0.027489833040728856,
+          "channel": "simplex_novelty",
+          "roc_auc": 0.4635509335422342
+        }
+      ],
+      "false_positive_audit": {
+        "k": 100,
+        "mean_quality": 0.9841033143435206,
+        "mean_uncertainty": 0.06601083823916479,
+        "min_quality": 0.6952380793435233,
+        "n": 100,
+        "n_abstained": 10,
+        "n_false_positives": 78,
+        "n_low_quality": 0,
+        "tiers": {
+          "critical": 8,
+          "high": 45,
+          "moderate": 47
+        }
+      },
+      "metrics": {
+        "average_precision": 0.06042600569981386,
+        "base_rate": 0.027,
+        "ci": {
+          "P@10": {
+            "high": 0.6,
+            "low": 0.1
+          },
+          "P@100": {
+            "high": 0.31,
+            "low": 0.14
+          },
+          "P@20": {
+            "high": 0.5,
+            "low": 0.1
+          },
+          "P@50": {
+            "high": 0.34,
+            "low": 0.1
+          },
+          "average_precision": {
+            "high": 0.06639760575585452,
+            "low": 0.055807327595663765
+          },
+          "roc_auc": {
+            "high": 0.6681463422330229,
+            "low": 0.6463172642562375
+          }
+        },
+        "lift_at_k": {
+          "lift@10": 11.10058977719528,
+          "lift@100": 8.14043250327654,
+          "lift@20": 11.10058977719528,
+          "lift@50": 8.14043250327654
+        },
+        "n_novel": 3052,
+        "n_objects": 112930,
+        "precision_at_k": {
+          "P@10": 0.3,
+          "P@100": 0.22,
+          "P@20": 0.3,
+          "P@50": 0.22
+        },
+        "recall_at_k": {
+          "R@200": 0.013761467889908258,
+          "R@500": 0.02522935779816514
+        },
+        "roc_auc": 0.6572746344170063
+      },
+      "n_abstained": 35515,
+      "per_class": [
+        {
+          "class_code": 992,
+          "class_name": "ILOT",
+          "enrichment": 34.22121212121212,
+          "held_out": true,
+          "in_top200": 22,
+          "low_n_warning": false,
+          "n": 363,
+          "recall@200": 0.06060606060606061
+        },
+        {
+          "class_code": 994,
+          "class_name": "PISN",
+          "enrichment": 32.76986607142857,
+          "held_out": true,
+          "in_top200": 13,
+          "low_n_warning": false,
+          "n": 224,
+          "recall@200": 0.05803571428571429
+        },
+        {
+          "class_code": 95,
+          "class_name": "SLSN-I",
+          "enrichment": 18.646015793251973,
+          "held_out": false,
+          "in_top200": 92,
+          "low_n_warning": false,
+          "n": 2786,
+          "recall@200": 0.033022254127781765
+        },
+        {
+          "class_code": 53,
+          "class_name": "Mira",
+          "enrichment": 13.353209459459459,
+          "held_out": false,
+          "in_top200": 7,
+          "low_n_warning": false,
+          "n": 296,
+          "recall@200": 0.02364864864864865
+        },
+        {
+          "class_code": 6,
+          "class_name": "muLens-Single",
+          "enrichment": 11.5234693877551,
+          "held_out": true,
+          "in_top200": 5,
+          "low_n_warning": false,
+          "n": 245,
+          "recall@200": 0.02040816326530612
+        },
+        {
+          "class_code": 16,
+          "class_name": "EB",
+          "enrichment": 3.5670940170940173,
+          "held_out": false,
+          "in_top200": 17,
+          "low_n_warning": false,
+          "n": 2691,
+          "recall@200": 0.0063173541434411
+        },
+        {
+          "class_code": 15,
+          "class_name": "TDE",
+          "enrichment": 3.4905636363636363,
+          "held_out": false,
+          "in_top200": 17,
+          "low_n_warning": false,
+          "n": 2750,
+          "recall@200": 0.0061818181818181816
+        },
+        {
+          "class_code": 88,
+          "class_name": "AGN",
+          "enrichment": 1.4805637495902984,
+          "held_out": false,
+          "in_top200": 8,
+          "low_n_warning": false,
+          "n": 3051,
+          "recall@200": 0.002622091117666339
+        },
+        {
+          "class_code": 92,
+          "class_name": "RRL",
+          "enrichment": 0.9971115035317861,
+          "held_out": false,
+          "in_top200": 7,
+          "low_n_warning": false,
+          "n": 3964,
+          "recall@200": 0.0017658930373360242
+        },
+        {
+          "class_code": 993,
+          "class_name": "CaRT",
+          "enrichment": 0.5411116435074269,
+          "held_out": true,
+          "in_top200": 2,
+          "low_n_warning": false,
+          "n": 2087,
+          "recall@200": 0.0009583133684714902
+        },
+        {
+          "class_code": 42,
+          "class_name": "SNII",
+          "enrichment": 0.14527457762785512,
+          "held_out": false,
+          "in_top200": 9,
+          "low_n_warning": false,
+          "n": 34981,
+          "recall@200": 0.00025728252479917667
+        },
+        {
+          "class_code": 90,
+          "class_name": "SNIa",
+          "enrichment": 0.012682778913321802,
+          "held_out": false,
+          "in_top200": 1,
+          "low_n_warning": false,
+          "n": 44521,
+          "recall@200": 2.246131039284832e-05
+        },
+        {
+          "class_code": 67,
+          "class_name": "SNIa-91bg",
+          "enrichment": 0.0,
+          "held_out": false,
+          "in_top200": 0,
+          "low_n_warning": false,
+          "n": 3050,
+          "recall@200": 0.0
+        },
+        {
+          "class_code": 62,
+          "class_name": "SNIbc",
+          "enrichment": 0.0,
+          "held_out": false,
+          "in_top200": 0,
+          "low_n_warning": false,
+          "n": 5544,
+          "recall@200": 0.0
+        },
+        {
+          "class_code": 52,
+          "class_name": "SNIax",
+          "enrichment": 0.0,
+          "held_out": false,
+          "in_top200": 0,
+          "low_n_warning": false,
+          "n": 3495,
+          "recall@200": 0.0
+        },
+        {
+          "class_code": 65,
+          "class_name": "M-dwarf",
+          "enrichment": 0.0,
+          "held_out": false,
+          "in_top200": 0,
+          "low_n_warning": false,
+          "n": 2749,
+          "recall@200": 0.0
+        },
+        {
+          "class_code": 64,
+          "class_name": "KN",
+          "enrichment": 0.0,
+          "held_out": true,
+          "in_top200": 0,
+          "low_n_warning": true,
+          "n": 27,
+          "recall@200": 0.0
+        },
+        {
+          "class_code": 991,
+          "class_name": "muLens-Binary",
+          "enrichment": 0.0,
+          "held_out": true,
+          "in_top200": 0,
+          "low_n_warning": false,
+          "n": 106,
+          "recall@200": 0.0
+        }
+      ],
+      "protocol": "deliberately out-of-domain reference (SNIa + AGN only)",
+      "tier_counts": {
+        "critical": 8,
+        "high": 45,
+        "moderate": 228,
+        "routine": 112649
+      },
+      "weights": {
+        "cc_weighted": 0.35,
+        "neighbor_entropy": 0.1,
+        "simplex_novelty": 0.4,
+        "taxonomy_gap": 1.0
+      }
+    },
+    "fullscale_naive": {
+      "benchmark": "fullscale_naive",
+      "channel_power": [
+        {
+          "average_precision": 0.046401530547031014,
+          "channel": "simplex_novelty",
+          "roc_auc": 0.6521641827131185
+        },
+        {
+          "average_precision": 0.07493165132368035,
+          "channel": "cc_weighted",
+          "roc_auc": 0.6099880134543121
+        },
+        {
+          "average_precision": 0.04332363792590603,
+          "channel": "physics_gap",
+          "roc_auc": 0.607947492258601
+        },
+        {
+          "average_precision": 0.030391017519209144,
+          "channel": "neighbor_entropy",
+          "roc_auc": 0.5370019344939152
+        },
+        {
+          "average_precision": 0.03158808216297078,
+          "channel": "family_misfit",
+          "roc_auc": 0.4951789196343749
+        },
+        {
+          "average_precision": 0.02521060132513952,
+          "channel": "anomaly_score",
+          "roc_auc": 0.4617629577228952
+        },
+        {
+          "average_precision": 0.022282650650451836,
+          "channel": "novelty_gap",
+          "roc_auc": 0.42978442646397985
+        },
+        {
+          "average_precision": 0.022403739603078978,
+          "channel": "taxonomy_gap",
+          "roc_auc": 0.4267526712636393
+        },
+        {
+          "average_precision": 0.02742172147875302,
+          "channel": "prior_entropy",
+          "roc_auc": 0.4234614390744392
+        }
+      ],
+      "domain_match": {
+        "per_covariate": {
+          "lc_n_det": {
+            "ks": 0.2556,
+            "psi": 0.35,
+            "ref_median": 11.0,
+            "stream_median": 5.0
+          },
+          "lc_peak_mag": {
+            "ks": 0.3895,
+            "psi": 0.8204,
+            "ref_median": 21.8569,
+            "stream_median": 22.732
+          },
+          "lc_snr_max": {
+            "ks": 0.3311,
+            "psi": 0.6256,
+            "ref_median": 31.3012,
+            "stream_median": 13.3237
+          },
+          "lc_t_span": {
+            "ks": 0.0443,
+            "psi": 0.0126,
+            "ref_median": 901.7852,
+            "stream_median": 898.7227
+          },
+          "phys_distmod": {
+            "ks": 0.3762,
+            "psi": 0.7446,
+            "ref_median": 40.203,
+            "stream_median": 42.382
+          },
+          "phys_z": {
+            "ks": 0.3761,
+            "psi": 0.7446,
+            "ref_median": 0.221,
+            "stream_median": 0.524
+          },
+          "q_det_frac": {
+            "ks": 0.2988,
+            "psi": 0.4697,
+            "ref_median": 0.0734,
+            "stream_median": 0.0312
+          },
+          "q_n_bands": {
+            "ks": 0.0,
+            "psi": 0.0,
+            "ref_median": 6.0,
+            "stream_median": 6.0
+          }
+        },
+        "score": 0.0,
+        "status": "abstain",
+        "strategy": "density_ratio",
+        "thresholds": {
+          "psi_abstain": 0.25,
+          "psi_matched": 0.1
+        }
+      },
+      "false_positive_audit": {
+        "k": 100,
+        "mean_quality": 0.9982171445676258,
+        "mean_uncertainty": 0.29789788191816746,
+        "min_quality": 0.9,
+        "n": 100,
+        "n_abstained": 19,
+        "n_false_positives": 74,
+        "n_low_quality": 0,
+        "tiers": {
+          "critical": 4,
+          "high": 84,
+          "moderate": 12
+        }
+      },
+      "metrics": {
+        "average_precision": 0.03495580307092841,
+        "base_rate": 0.027,
+        "ci": {
+          "P@10": {
+            "high": 0.9,
+            "low": 0.3
+          },
+          "P@100": {
+            "high": 0.35,
+            "low": 0.16
+          },
+          "P@20": {
+            "high": 0.7012499999999988,
+            "low": 0.25
+          },
+          "P@50": {
+            "high": 0.48049999999999954,
+            "low": 0.22
+          },
+          "average_precision": {
+            "high": 0.03879658742970367,
+            "low": 0.03192646769520877
+          },
+          "roc_auc": {
+            "high": 0.5546030818893433,
+            "low": 0.5343898000446593
+          }
+        },
+        "lift_at_k": {
+          "lift@10": 22.20117955439056,
+          "lift@100": 9.62051114023591,
+          "lift@20": 18.500982961992136,
+          "lift@50": 13.320707732634338
+        },
+        "n_novel": 3052,
+        "n_objects": 112930,
+        "precision_at_k": {
+          "P@10": 0.6,
+          "P@100": 0.26,
+          "P@20": 0.5,
+          "P@50": 0.36
+        },
+        "recall_at_k": {
+          "R@200": 0.010484927916120577,
+          "R@500": 0.01507208387942333
+        },
+        "roc_auc": 0.5446788153485707
+      },
+      "n_abstained": 35515,
+      "per_class": [
+        {
+          "class_code": 6,
+          "class_name": "muLens-Single",
+          "enrichment": 55.31265306122448,
+          "held_out": true,
+          "in_top200": 24,
+          "low_n_warning": false,
+          "n": 245,
+          "recall@200": 0.09795918367346938
+        },
+        {
+          "class_code": 991,
+          "class_name": "muLens-Binary",
+          "enrichment": 15.98066037735849,
+          "held_out": true,
+          "in_top200": 3,
+          "low_n_warning": false,
+          "n": 106,
+          "recall@200": 0.02830188679245283
+        },
+        {
+          "class_code": 994,
+          "class_name": "PISN",
+          "enrichment": 10.083035714285714,
+          "held_out": true,
+          "in_top200": 4,
+          "low_n_warning": false,
+          "n": 224,
+          "recall@200": 0.017857142857142856
+        },
+        {
+          "class_code": 95,
+          "class_name": "SLSN-I",
+          "enrichment": 6.282896625987078,
+          "held_out": false,
+          "in_top200": 31,
+          "low_n_warning": false,
+          "n": 2786,
+          "recall@200": 0.011127063890882987
+        },
+        {
+          "class_code": 88,
+          "class_name": "AGN",
+          "enrichment": 3.5163389052769585,
+          "held_out": false,
+          "in_top200": 19,
+          "low_n_warning": false,
+          "n": 3051,
+          "recall@200": 0.006227466404457555
+        },
+        {
+          "class_code": 992,
+          "class_name": "ILOT",
+          "enrichment": 1.5555096418732781,
+          "held_out": true,
+          "in_top200": 1,
+          "low_n_warning": false,
+          "n": 363,
+          "recall@200": 0.0027548209366391185
+        },
+        {
+          "class_code": 67,
+          "class_name": "SNIa-91bg",
+          "enrichment": 1.295918032786885,
+          "held_out": false,
+          "in_top200": 7,
+          "low_n_warning": false,
+          "n": 3050,
+          "recall@200": 0.0022950819672131148
+        },
+        {
+          "class_code": 90,
+          "class_name": "SNIa",
+          "enrichment": 0.9765739763257788,
+          "held_out": false,
+          "in_top200": 77,
+          "low_n_warning": false,
+          "n": 44521,
+          "recall@200": 0.0017295209002493206
+        },
+        {
+          "class_code": 15,
+          "class_name": "TDE",
+          "enrichment": 0.8213090909090909,
+          "held_out": false,
+          "in_top200": 4,
+          "low_n_warning": false,
+          "n": 2750,
+          "recall@200": 0.0014545454545454545
+        },
+        {
+          "class_code": 52,
+          "class_name": "SNIax",
+          "enrichment": 0.807796852646638,
+          "held_out": false,
+          "in_top200": 5,
+          "low_n_warning": false,
+          "n": 3495,
+          "recall@200": 0.001430615164520744
+        },
+        {
+          "class_code": 92,
+          "class_name": "RRL",
+          "enrichment": 0.7122225025227044,
+          "held_out": false,
+          "in_top200": 5,
+          "low_n_warning": false,
+          "n": 3964,
+          "recall@200": 0.0012613521695257316
+        },
+        {
+          "class_code": 62,
+          "class_name": "SNIbc",
+          "enrichment": 0.6110930735930736,
+          "held_out": false,
+          "in_top200": 6,
+          "low_n_warning": false,
+          "n": 5544,
+          "recall@200": 0.0010822510822510823
+        },
+        {
+          "class_code": 42,
+          "class_name": "SNII",
+          "enrichment": 0.22598267630999685,
+          "held_out": false,
+          "in_top200": 14,
+          "low_n_warning": false,
+          "n": 34981,
+          "recall@200": 0.0004002172607987193
+        },
+        {
+          "class_code": 53,
+          "class_name": "Mira",
+          "enrichment": 0.0,
+          "held_out": false,
+          "in_top200": 0,
+          "low_n_warning": false,
+          "n": 296,
+          "recall@200": 0.0
+        },
+        {
+          "class_code": 65,
+          "class_name": "M-dwarf",
+          "enrichment": 0.0,
+          "held_out": false,
+          "in_top200": 0,
+          "low_n_warning": false,
+          "n": 2749,
+          "recall@200": 0.0
+        },
+        {
+          "class_code": 64,
+          "class_name": "KN",
+          "enrichment": 0.0,
+          "held_out": true,
+          "in_top200": 0,
+          "low_n_warning": true,
+          "n": 27,
+          "recall@200": 0.0
+        },
+        {
+          "class_code": 16,
+          "class_name": "EB",
+          "enrichment": 0.0,
+          "held_out": false,
+          "in_top200": 0,
+          "low_n_warning": false,
+          "n": 2691,
+          "recall@200": 0.0
+        },
+        {
+          "class_code": 993,
+          "class_name": "CaRT",
+          "enrichment": 0.0,
+          "held_out": true,
+          "in_top200": 0,
+          "low_n_warning": false,
+          "n": 2087,
+          "recall@200": 0.0
+        }
+      ],
+      "protocol": "train reference applied to a different survey domain, unweighted",
+      "reference_build": {
+        "effective_sample_size": 2481.6797915532998,
+        "ess_fraction": 0.5370438847767366,
+        "n_reference": 4621,
+        "strategy": "density_ratio",
+        "weight_max": 5.0,
+        "weight_min": 0.2
+      },
+      "tier_counts": {
+        "critical": 4,
+        "high": 84,
+        "moderate": 4676,
+        "routine": 108166
+      },
+      "weights": {
+        "cc_weighted": 0.35,
+        "neighbor_entropy": 0.1,
+        "simplex_novelty": 0.4,
+        "taxonomy_gap": 1.0
+      }
+    },
+    "matched_baseline_v1": {
+      "abstention_rate": 0.5545509342977697,
+      "benchmark": "matched_baseline_v1",
+      "channel_power": [
+        {
+          "average_precision": 0.593117182753421,
+          "channel": "cc_weighted",
+          "roc_auc": 0.8322212443763324
+        },
+        {
+          "average_precision": 0.4907978886642906,
+          "channel": "prior_entropy",
+          "roc_auc": 0.7749812228300041
+        },
+        {
+          "average_precision": 0.40956783065853214,
+          "channel": "taxonomy_gap",
+          "roc_auc": 0.7675879492295671
+        },
+        {
+          "average_precision": 0.342579994316034,
+          "channel": "novelty_gap",
+          "roc_auc": 0.7602401960412415
+        },
+        {
+          "average_precision": 0.2487757243464772,
+          "channel": "family_misfit",
+          "roc_auc": 0.7364975077574369
+        },
+        {
+          "average_precision": 0.2672522363190832,
+          "channel": "anomaly_score",
+          "roc_auc": 0.7070628712758613
+        },
+        {
+          "average_precision": 0.1915569700912006,
+          "channel": "neighbor_entropy",
+          "roc_auc": 0.7047944374056399
+        },
+        {
+          "average_precision": 0.23114047080027963,
+          "channel": "physics_gap",
+          "roc_auc": 0.6764010803511141
+        },
+        {
+          "average_precision": 0.22855249249869428,
+          "channel": "simplex_novelty",
+          "roc_auc": 0.6361098255809543
+        }
+      ],
+      "false_positive_audit": {
+        "k": 100,
+        "mean_quality": 0.9743785302005117,
+        "mean_uncertainty": 0.3952642429445579,
+        "min_quality": 0.6888888888888889,
+        "n": 100,
+        "n_abstained": 62,
+        "n_false_positives": 57,
+        "n_low_quality": 0,
+        "tiers": {
+          "critical": 1,
+          "high": 8,
+          "moderate": 42,
+          "routine": 49
+        }
+      },
+      "metrics": {
+        "average_precision": 0.3546360601529392,
+        "base_rate": 0.1073,
+        "ci": {
+          "P@10": {
+            "high": 1.0,
+            "low": 0.9
+          },
+          "P@100": {
+            "high": 0.5402499999999998,
+            "low": 0.32
+          },
+          "P@20": {
+            "high": 1.0,
+            "low": 0.7
+          },
+          "P@50": {
+            "high": 0.82,
+            "low": 0.5
+          },
+          "average_precision": {
+            "high": 0.4265911444466043,
+            "low": 0.2899748757026206
+          },
+          "roc_auc": {
+            "high": 0.7300584588667111,
+            "low": 0.6375234026985043
+          }
+        },
+        "lift_at_k": {
+          "lift@10": 9.320224719101123,
+          "lift@100": 4.007696629213483,
+          "lift@20": 8.38820224719101,
+          "lift@50": 6.337752808988764
+        },
+        "n_novel": 178,
+        "n_objects": 1659,
+        "precision_at_k": {
+          "P@10": 1.0,
+          "P@100": 0.43,
+          "P@20": 0.9,
+          "P@50": 0.68
+        },
+        "recall_at_k": {
+          "R@200": 0.3146067415730337,
+          "R@500": 0.6292134831460674
+        },
+        "roc_auc": 0.6820816484458573
+      },
+      "n_abstained": 920,
+      "per_class": [
+        {
+          "class_code": 6,
+          "class_name": "muLens-Single",
+          "enrichment": 3.7771875000000006,
+          "held_out": true,
+          "in_top200": 51,
+          "low_n_warning": false,
+          "n": 112,
+          "recall@200": 0.45535714285714285
+        },
+        {
+          "class_code": 52,
+          "class_name": "SNIax",
+          "enrichment": 3.0163636363636366,
+          "held_out": false,
+          "in_top200": 16,
+          "low_n_warning": false,
+          "n": 44,
+          "recall@200": 0.36363636363636365
+        },
+        {
+          "class_code": 62,
+          "class_name": "SNIbc",
+          "enrichment": 2.7085714285714286,
+          "held_out": false,
+          "in_top200": 32,
+          "low_n_warning": false,
+          "n": 98,
+          "recall@200": 0.32653061224489793
+        },
+        {
+          "class_code": 67,
+          "class_name": "SNIa-91bg",
+          "enrichment": 2.695875,
+          "held_out": false,
+          "in_top200": 13,
+          "low_n_warning": false,
+          "n": 40,
+          "recall@200": 0.325
+        },
+        {
+          "class_code": 42,
+          "class_name": "SNII",
+          "enrichment": 1.6455668016194331,
+          "held_out": false,
+          "in_top200": 49,
+          "low_n_warning": false,
+          "n": 247,
+          "recall@200": 0.19838056680161945
+        },
+        {
+          "class_code": 15,
+          "class_name": "TDE",
+          "enrichment": 0.9695454545454545,
+          "held_out": false,
+          "in_top200": 9,
+          "low_n_warning": false,
+          "n": 77,
+          "recall@200": 0.11688311688311688
+        },
+        {
+          "class_code": 95,
+          "class_name": "SLSN-I",
+          "enrichment": 0.77765625,
+          "held_out": false,
+          "in_top200": 3,
+          "low_n_warning": false,
+          "n": 32,
+          "recall@200": 0.09375
+        },
+        {
+          "class_code": 64,
+          "class_name": "KN",
+          "enrichment": 0.6284090909090909,
+          "held_out": true,
+          "in_top200": 5,
+          "low_n_warning": false,
+          "n": 66,
+          "recall@200": 0.07575757575757576
+        },
+        {
+          "class_code": 90,
+          "class_name": "SNIa",
+          "enrichment": 0.3833823529411765,
+          "held_out": false,
+          "in_top200": 22,
+          "low_n_warning": false,
+          "n": 476,
+          "recall@200": 0.046218487394957986
+        },
+        {
+          "class_code": 16,
+          "class_name": "EB",
+          "enrichment": 0.0,
+          "held_out": false,
+          "in_top200": 0,
+          "low_n_warning": false,
+          "n": 170,
+          "recall@200": 0.0
+        },
+        {
+          "class_code": 53,
+          "class_name": "Mira",
+          "enrichment": 0.0,
+          "held_out": false,
+          "in_top200": 0,
+          "low_n_warning": true,
+          "n": 4,
+          "recall@200": 0.0
+        },
+        {
+          "class_code": 65,
+          "class_name": "M-dwarf",
+          "enrichment": 0.0,
+          "held_out": false,
+          "in_top200": 0,
+          "low_n_warning": false,
+          "n": 176,
+          "recall@200": 0.0
+        },
+        {
+          "class_code": 88,
+          "class_name": "AGN",
+          "enrichment": 0.0,
+          "held_out": false,
+          "in_top200": 0,
+          "low_n_warning": false,
+          "n": 76,
+          "recall@200": 0.0
+        },
+        {
+          "class_code": 92,
+          "class_name": "RRL",
+          "enrichment": 0.0,
+          "held_out": false,
+          "in_top200": 0,
+          "low_n_warning": false,
+          "n": 41,
+          "recall@200": 0.0
+        }
+      ],
+      "protocol": "PLAsTiCC train split; reference drawn from the same survey domain",
+      "tier_counts": {
+        "critical": 1,
+        "high": 8,
+        "moderate": 42,
+        "routine": 1608
+      },
+      "weights": {
+        "novelty_gap": 0.05,
+        "simplex_novelty": 0.2,
+        "taxonomy_gap": 1.0
+      }
+    },
+    "matched_nested_v2": {
+      "abstention_rate": 0.5545509342977697,
+      "benchmark": "matched_nested_v2",
+      "channel_power": [
+        {
+          "average_precision": 0.593117182753421,
+          "channel": "cc_weighted",
+          "roc_auc": 0.8322212443763324
+        },
+        {
+          "average_precision": 0.4907978886642906,
+          "channel": "prior_entropy",
+          "roc_auc": 0.7749812228300041
+        },
+        {
+          "average_precision": 0.40956783065853214,
+          "channel": "taxonomy_gap",
+          "roc_auc": 0.7675879492295671
+        },
+        {
+          "average_precision": 0.342579994316034,
+          "channel": "novelty_gap",
+          "roc_auc": 0.7602401960412415
+        },
+        {
+          "average_precision": 0.2487757243464772,
+          "channel": "family_misfit",
+          "roc_auc": 0.7364975077574369
+        },
+        {
+          "average_precision": 0.2672522363190832,
+          "channel": "anomaly_score",
+          "roc_auc": 0.7070628712758613
+        },
+        {
+          "average_precision": 0.1915569700912006,
+          "channel": "neighbor_entropy",
+          "roc_auc": 0.7047944374056399
+        },
+        {
+          "average_precision": 0.23114047080027963,
+          "channel": "physics_gap",
+          "roc_auc": 0.6764010803511141
+        },
+        {
+          "average_precision": 0.22855249249869428,
+          "channel": "simplex_novelty",
+          "roc_auc": 0.6361098255809543
+        }
+      ],
+      "false_positive_audit": {
+        "k": 100,
+        "mean_quality": 0.9781413686057877,
+        "mean_uncertainty": 0.39403691819647846,
+        "min_quality": 0.6888888888888889,
+        "n": 100,
+        "n_abstained": 68,
+        "n_false_positives": 50,
+        "n_low_quality": 0,
+        "tiers": {
+          "critical": 1,
+          "high": 11,
+          "moderate": 50,
+          "routine": 38
+        }
+      },
+      "metrics": {
+        "average_precision": 0.37523841999265517,
+        "base_rate": 0.1073,
+        "ci": {
+          "P@10": {
+            "high": 1.0,
+            "low": 0.9
+          },
+          "P@100": {
+            "high": 0.61,
+            "low": 0.38
+          },
+          "P@20": {
+            "high": 1.0,
+            "low": 0.8
+          },
+          "P@50": {
+            "high": 0.94,
+            "low": 0.64
+          },
+          "average_precision": {
+            "high": 0.4388466662165456,
+            "low": 0.3088230701474491
+          },
+          "roc_auc": {
+            "high": 0.7300243913324601,
+            "low": 0.6480990643277814
+          }
+        },
+        "lift_at_k": {
+          "lift@10": 9.320224719101123,
+          "lift@100": 4.660112359550562,
+          "lift@20": 8.854213483146067,
+          "lift@50": 7.456179775280899
+        },
+        "n_novel": 178,
+        "n_objects": 1659,
+        "precision_at_k": {
+          "P@10": 1.0,
+          "P@100": 0.5,
+          "P@20": 0.95,
+          "P@50": 0.8
+        },
+        "recall_at_k": {
+          "R@200": 0.3202247191011236,
+          "R@500": 0.5056179775280899
+        },
+        "roc_auc": 0.6882838045960442
+      },
+      "n_abstained": 920,
+      "per_class": [
+        {
+          "class_code": 6,
+          "class_name": "muLens-Single",
+          "enrichment": 3.9253125000000004,
+          "held_out": true,
+          "in_top200": 53,
+          "low_n_warning": false,
+          "n": 112,
+          "recall@200": 0.4732142857142857
+        },
+        {
+          "class_code": 52,
+          "class_name": "SNIax",
+          "enrichment": 3.204886363636364,
+          "held_out": false,
+          "in_top200": 17,
+          "low_n_warning": false,
+          "n": 44,
+          "recall@200": 0.38636363636363635
+        },
+        {
+          "class_code": 62,
+          "class_name": "SNIbc",
+          "enrichment": 2.9625,
+          "held_out": false,
+          "in_top200": 35,
+          "low_n_warning": false,
+          "n": 98,
+          "recall@200": 0.35714285714285715
+        },
+        {
+          "class_code": 67,
+          "class_name": "SNIa-91bg",
+          "enrichment": 2.4885,
+          "held_out": false,
+          "in_top200": 12,
+          "low_n_warning": false,
+          "n": 40,
+          "recall@200": 0.3
+        },
+        {
+          "class_code": 42,
+          "class_name": "SNII",
+          "enrichment": 1.544817813765182,
+          "held_out": false,
+          "in_top200": 46,
+          "low_n_warning": false,
+          "n": 247,
+          "recall@200": 0.1862348178137652
+        },
+        {
+          "class_code": 15,
+          "class_name": "TDE",
+          "enrichment": 1.185,
+          "held_out": false,
+          "in_top200": 11,
+          "low_n_warning": false,
+          "n": 77,
+          "recall@200": 0.14285714285714285
+        },
+        {
+          "class_code": 95,
+          "class_name": "SLSN-I",
+          "enrichment": 0.77765625,
+          "held_out": false,
+          "in_top200": 3,
+          "low_n_warning": false,
+          "n": 32,
+          "recall@200": 0.09375
+        },
+        {
+          "class_code": 64,
+          "class_name": "KN",
+          "enrichment": 0.5027272727272727,
+          "held_out": true,
+          "in_top200": 4,
+          "low_n_warning": false,
+          "n": 66,
+          "recall@200": 0.06060606060606061
+        },
+        {
+          "class_code": 90,
+          "class_name": "SNIa",
+          "enrichment": 0.3311029411764706,
+          "held_out": false,
+          "in_top200": 19,
+          "low_n_warning": false,
+          "n": 476,
+          "recall@200": 0.03991596638655462
+        },
+        {
+          "class_code": 16,
+          "class_name": "EB",
+          "enrichment": 0.0,
+          "held_out": false,
+          "in_top200": 0,
+          "low_n_warning": false,
+          "n": 170,
+          "recall@200": 0.0
+        },
+        {
+          "class_code": 53,
+          "class_name": "Mira",
+          "enrichment": 0.0,
+          "held_out": false,
+          "in_top200": 0,
+          "low_n_warning": true,
+          "n": 4,
+          "recall@200": 0.0
+        },
+        {
+          "class_code": 65,
+          "class_name": "M-dwarf",
+          "enrichment": 0.0,
+          "held_out": false,
+          "in_top200": 0,
+          "low_n_warning": false,
+          "n": 176,
+          "recall@200": 0.0
+        },
+        {
+          "class_code": 88,
+          "class_name": "AGN",
+          "enrichment": 0.0,
+          "held_out": false,
+          "in_top200": 0,
+          "low_n_warning": false,
+          "n": 76,
+          "recall@200": 0.0
+        },
+        {
+          "class_code": 92,
+          "class_name": "RRL",
+          "enrichment": 0.0,
+          "held_out": false,
+          "in_top200": 0,
+          "low_n_warning": false,
+          "n": 41,
+          "recall@200": 0.0
+        }
+      ],
+      "protocol": "PLAsTiCC train split; reference drawn from the same survey domain",
+      "tier_counts": {
+        "critical": 1,
+        "high": 11,
+        "moderate": 50,
+        "routine": 1597
+      },
+      "weights": {
+        "cc_weighted": 0.35,
+        "neighbor_entropy": 0.1,
+        "simplex_novelty": 0.4,
+        "taxonomy_gap": 1.0
+      }
+    }
+  },
+  "domain_degradation": [
+    {
+      "P@50": 0.36,
+      "average_precision": 0.03495580307092841,
+      "base_rate": 0.027,
+      "n_objects": 112930,
+      "prior_cv_accuracy": null,
+      "reference": "unweighted_train_reference",
+      "roc_auc": 0.5446788153485707
+    },
+    {
+      "P@50": 0.38,
+      "average_precision": 0.037299487330935494,
+      "base_rate": 0.027,
+      "n_objects": 112930,
+      "prior_cv_accuracy": null,
+      "reference": "density_ratio_reweighted",
+      "roc_auc": 0.5524691635238387
+    },
+    {
+      "P@50": 0.22,
+      "average_precision": 0.06042600569981386,
+      "base_rate": 0.027,
+      "n_objects": 112930,
+      "prior_cv_accuracy": null,
+      "reference": "deliberately_mismatched",
+      "roc_auc": 0.6572746344170063
+    }
+  ],
+  "domain_health_fullscale": {
+    "covariates": [
+      {
+        "covariate": "lc_snr_max",
+        "fraction_outside_validated_range": 0.0020632250066412823,
+        "ks": 0.3311150783253556,
+        "psi": 0.6255832113067319,
+        "reference_median": 31.3012,
+        "stream_median": 13.3237,
+        "valid_range": [
+          0.5432,
+          202.8411
+        ]
+      },
+      {
+        "covariate": "lc_n_det",
+        "fraction_outside_validated_range": 0.0006198530062870805,
+        "ks": 0.25561174501776407,
+        "psi": 0.3499891774407074,
+        "reference_median": 11.0,
+        "stream_median": 5.0,
+        "valid_range": [
+          2.0,
+          340.9
+        ]
+      },
+      {
+        "covariate": "lc_t_span",
+        "fraction_outside_validated_range": 0.010147879217214203,
+        "ks": 0.044331374601410456,
+        "psi": 0.012553866127090078,
+        "reference_median": 901.7852,
+        "stream_median": 898.7227,
+        "valid_range": [
+          847.7426,
+          1092.9961
+        ]
+      },
+      {
+        "covariate": "lc_peak_mag",
+        "fraction_outside_validated_range": 0.03452581245019038,
+        "ks": 0.38946839139627093,
+        "psi": 0.8203507654947755,
+        "reference_median": 21.8569,
+        "stream_median": 22.732,
+        "valid_range": [
+          17.0203,
+          24.6614
+        ]
+      },
+      {
+        "covariate": "phys_z",
+        "fraction_outside_validated_range": 0.004586912246524396,
+        "ks": 0.37607079381675407,
+        "psi": 0.744631872216718,
+        "reference_median": 0.221,
+        "stream_median": 0.524,
+        "valid_range": [
+          0.0,
+          2.7938
+        ]
+      },
+      {
+        "covariate": "phys_distmod",
+        "fraction_outside_validated_range": 0.004586912246524396,
+        "ks": 0.3762263022446336,
+        "psi": 0.744641015068304,
+        "reference_median": 40.203,
+        "stream_median": 42.382,
+        "valid_range": [
+          0.0,
+          46.8398
+        ]
+      },
+      {
+        "covariate": "q_n_bands",
+        "fraction_outside_validated_range": 0.0,
+        "ks": 0.0,
+        "psi": 0.0,
+        "reference_median": 6.0,
+        "stream_median": 6.0,
+        "valid_range": [
+          6.0,
+          6.0
+        ]
+      },
+      {
+        "covariate": "q_det_frac",
+        "fraction_outside_validated_range": 0.02028690339148145,
+        "ks": 0.29875997397180754,
+        "psi": 0.4696662665699659,
+        "reference_median": 0.0734,
+        "stream_median": 0.0312,
+        "valid_range": [
+          0.0057,
+          0.9882
+        ]
+      }
+    ],
+    "mean_psi": 0.4709,
+    "score": 0.0,
+    "status": "abstain",
+    "thresholds": {
+      "fail_psi": 0.25,
+      "warn_psi": 0.1
+    },
+    "worst_psi": 0.8204
+  },
+  "domain_health_matched": {
+    "covariates": [
+      {
+        "covariate": "lc_snr_max",
+        "fraction_outside_validated_range": 0.016877637130801686,
+        "ks": 0.018612125189418238,
+        "psi": 0.007730499269920015,
+        "reference_median": 31.3012,
+        "stream_median": 30.0488,
+        "valid_range": [
+          0.5432,
+          202.8411
+        ]
+      },
+      {
+        "covariate": "lc_n_det",
+        "fraction_outside_validated_range": 0.004822182037371911,
+        "ks": 0.032517770447803684,
+        "psi": 0.007745550395402431,
+        "reference_median": 11.0,
+        "stream_median": 10.0,
+        "valid_range": [
+          2.0,
+          340.9
+        ]
+      },
+      {
+        "covariate": "lc_t_span",
+        "fraction_outside_validated_range": 0.006630500301386378,
+        "ks": 0.0174734964563458,
+        "psi": 0.002902395691808162,
+        "reference_median": 901.7852,
+        "stream_median": 902.6094,
+        "valid_range": [
+          847.7426,
+          1092.9961
+        ]
+      },
+      {
+        "covariate": "lc_peak_mag",
+        "fraction_outside_validated_range": 0.018083182640144666,
+        "ks": 0.0330932808121427,
+        "psi": 0.009664675591099185,
+        "reference_median": 21.8569,
+        "stream_median": 21.8347,
+        "valid_range": [
+          17.0203,
+          24.6614
+        ]
+      },
+      {
+        "covariate": "phys_z",
+        "fraction_outside_validated_range": 0.006027727546714889,
+        "ks": 0.040591742574161815,
+        "psi": 0.007843306463671807,
+        "reference_median": 0.221,
+        "stream_median": 0.199,
+        "valid_range": [
+          0.0,
+          2.7938
+        ]
+      },
+      {
+        "covariate": "phys_distmod",
+        "fraction_outside_validated_range": 0.006027727546714889,
+        "ks": 0.041240952701839806,
+        "psi": 0.007616617649062732,
+        "reference_median": 40.203,
+        "stream_median": 39.95,
+        "valid_range": [
+          0.0,
+          46.8398
+        ]
+      },
+      {
+        "covariate": "q_n_bands",
+        "fraction_outside_validated_range": 0.0,
+        "ks": 0.0,
+        "psi": 0.0,
+        "reference_median": 6.0,
+        "stream_median": 6.0,
+        "valid_range": [
+          6.0,
+          6.0
+        ]
+      },
+      {
+        "covariate": "q_det_frac",
+        "fraction_outside_validated_range": 0.01567209162145871,
+        "ks": 0.042659901419718316,
+        "psi": 0.008370305159455794,
+        "reference_median": 0.0734,
+        "stream_median": 0.0678,
+        "valid_range": [
+          0.0057,
+          0.9882
+        ]
+      }
+    ],
+    "mean_psi": 0.0065,
+    "score": 0.9613,
+    "status": "matched",
+    "thresholds": {
+      "fail_psi": 0.25,
+      "warn_psi": 0.1
+    },
+    "worst_psi": 0.0097
+  },
+  "frozen_v1_baseline": {
+    "ai01_roc_auc_macro": 0.97,
+    "ai01_top3_accuracy": 0.9608,
+    "ai05_average_precision": 0.2681,
+    "ai05_base_rate": 0.1089,
+    "ai05_lift": 2.46,
+    "ai05_precision_at_10": 0.8,
+    "ai05_roc_auc": 0.7291,
+    "cne_version": "1.0.0",
+    "dataset": "PLAsTiCC (Zenodo 2539456)",
+    "domain_matched_prior_roc_auc": 0.818,
+    "out_of_domain_prior_roc_auc": 0.61,
+    "unsupervised_ensemble_roc_auc": 0.451
+  },
+  "leakage_guard": {
+    "locked_n": 0,
+    "locked_split": "validation",
+    "stages": {
+      "weight_search": 1568
+    },
+    "violations": {}
+  },
+  "prior": {
+    "classes": [
+      "15",
+      "16",
+      "42",
+      "52",
+      "53",
+      "62",
+      "65",
+      "67",
+      "88",
+      "90",
+      "92",
+      "95"
+    ],
+    "cv_accuracy": 0.8258,
+    "cv_roc_auc_macro": 0.9668,
+    "domain": "matched",
+    "n_classes": 12,
+    "n_folds": 4,
+    "n_objects": 4621
+  },
+  "provenance": {
+    "cne_version": "2.0.0",
+    "codename": "domain-matched prior, hardened evaluation",
+    "config_fingerprint": "a4f5949b24de7be6",
+    "config_id": "cne-default",
+    "dataset": {
+      "name": "PLAsTiCC",
+      "test_lightcurves": [
+        "plasticc_test_lightcurves_01.csv.gz",
+        "plasticc_test_lightcurves_02.csv.gz",
+        "plasticc_test_lightcurves_03.csv.gz"
+      ],
+      "train_lightcurves": "plasticc_train_lightcurves.csv.gz",
+      "zenodo": "2539456"
+    },
+    "libraries": {
+      "fastapi": "0.141.1",
+      "lightgbm": "4.7.0",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "platform": "Linux-6.1.158+-x86_64-with-glibc2.41",
+      "pyarrow": "25.0.1",
+      "python": "3.13.14",
+      "scipy": "1.17.1",
+      "sklearn": "1.6.1"
+    },
+    "manifest": "cne-v2-splits",
+    "n_features": 379,
+    "n_quality_features": 22,
+    "seed": 42,
+    "splits": {
+      "prior_fit": 4621,
+      "test_fullscale": 112930,
+      "test_matched": 1659,
+      "validation": 1568
+    }
+  },
+  "review_budget_fullscale": [
+    {
+      "budget": 10,
+      "expected_novel_recovered": 7.0,
+      "expected_reviews": 7.433758625590173,
+      "lift": 235.41254002729553,
+      "precision": 0.9416501601091821
+    },
+    {
+      "budget": 50,
+      "expected_novel_recovered": 19.0,
+      "expected_reviews": 23.482172464431777,
+      "lift": 202.28111377662268,
+      "precision": 0.8091244551064907
+    },
+    {
+      "budget": 100,
+      "expected_novel_recovered": 29.0,
+      "expected_reviews": 39.265620805634086,
+      "lift": 184.63989238544582,
+      "precision": 0.7385595695417833
+    },
+    {
+      "budget": 500,
+      "expected_novel_recovered": 59.0,
+      "expected_reviews": 122.76251796175532,
+      "lift": 120.15067990536919,
+      "precision": 0.48060271962147677
+    },
+    {
+      "budget": 1000,
+      "expected_novel_recovered": 73.0,
+      "expected_reviews": 207.0314153073632,
+      "lift": 88.1508730107731,
+      "precision": 0.3526034920430924
+    }
+  ],
+  "review_budget_matched": [
+    {
+      "budget": 10,
+      "expected_novel_recovered": 10.0,
+      "expected_reviews": 10.0,
+      "lift": 250.0,
+      "precision": 1.0
+    },
+    {
+      "budget": 50,
+      "expected_novel_recovered": 40.0,
+      "expected_reviews": 40.33414557104824,
+      "lift": 247.92889147447264,
+      "precision": 0.9917155658978906
+    },
+    {
+      "budget": 100,
+      "expected_novel_recovered": 50.0,
+      "expected_reviews": 51.67072785524121,
+      "lift": 241.9164683536012,
+      "precision": 0.9676658734144048
+    },
+    {
+      "budget": 500,
+      "expected_novel_recovered": 90.0,
+      "expected_reviews": 103.69996841297777,
+      "lift": 216.97210080523212,
+      "precision": 0.8678884032209285
+    },
+    {
+      "budget": 1000,
+      "expected_novel_recovered": 142.0,
+      "expected_reviews": 170.66968999593882,
+      "lift": 208.0041277443273,
+      "precision": 0.8320165109773092
+    }
+  ],
+  "runtime_s": 1329.2,
+  "stress_fullscale": {
+    "base_rate_observed": 0.027026,
+    "priors": [
+      {
+        "P@100": 0.5290079529668315,
+        "P@200": 0.4368096708184,
+        "P@50": 0.6276148651529513,
+        "R@200": 0.014416775884665793,
+        "R@500": 0.019331585845347315,
+        "average_precision": 0.09010396775904544,
+        "average_precision_ci": {
+          "high": 0.09706469509297863,
+          "low": 0.08359430974603801
+        },
+        "lift@100": 52.90079529668314,
+        "lift@200": 43.68096708184,
+        "lift@50": 62.761486515295125,
+        "negative_weight": 0.36365622145438664,
+        "roc_auc": 0.5524691635238382,
+        "target_rate": 0.01
+      },
+      {
+        "P@100": 0.9189225659350475,
+        "P@200": 0.8867047539278975,
+        "P@50": 0.9444664597090496,
+        "R@200": 0.014416775884665793,
+        "R@500": 0.019331585845347315,
+        "average_precision": 0.47631052734277,
+        "average_precision_ci": {
+          "high": 0.4917737908800413,
+          "low": 0.46208291554003855
+        },
+        "lift@100": 918.9225659350475,
+        "lift@200": 886.7047539278975,
+        "lift@50": 944.4664597090496,
+        "negative_weight": 0.036038003927912184,
+        "roc_auc": 0.5524691635238432,
+        "target_rate": 0.001
+      },
+      {
+        "P@100": 0.991261872029147,
+        "P@200": 0.9873952967904649,
+        "P@50": 0.994159716857327,
+        "R@200": 0.014416775884665793,
+        "R@500": 0.019331585845347315,
+        "average_precision": 0.8992100426076725,
+        "average_precision_ci": {
+          "high": 0.9044401558283203,
+          "low": 0.8943544541589791
+        },
+        "lift@100": 9912.61872029147,
+        "lift@200": 9873.952967904648,
+        "lift@50": 9941.59716857327,
+        "negative_weight": 0.0036005566480632337,
+        "roc_auc": 0.5524691635238428,
+        "target_rate": 0.0001
+      }
+    ]
+  },
+  "stress_matched": {
+    "base_rate_observed": 0.107294,
+    "priors": [
+      {
+        "P@100": 0.5196237431073629,
+        "P@200": 0.30126989049710157,
+        "P@50": 0.8122702497147927,
+        "R@200": 0.3202247191011236,
+        "R@500": 0.5056179775280899,
+        "average_precision": 0.38521246766870415,
+        "average_precision_ci": {
+          "high": 0.44918880116687215,
+          "low": 0.31930074325013436
+        },
+        "lift@100": 5.196237431073629,
+        "lift@200": 3.0126989049710153,
+        "lift@50": 8.122702497147927,
+        "negative_weight": 0.9244694132334582,
+        "roc_auc": 0.6882838045960438,
+        "target_rate": 0.1
+      },
+      {
+        "P@100": 0.922472910014134,
+        "P@200": 0.8258702867944323,
+        "P@50": 0.9794216954522087,
+        "R@200": 0.3202247191011236,
+        "R@500": 0.5056179775280899,
+        "average_precision": 0.7825516284660413,
+        "average_precision_ci": {
+          "high": 0.8166488981118689,
+          "low": 0.7394323898790995
+        },
+        "lift@100": 92.2472910014134,
+        "lift@200": 82.58702867944324,
+        "lift@50": 97.94216954522086,
+        "negative_weight": 0.08404267393031438,
+        "roc_auc": 0.6882838045960449,
+        "target_rate": 0.01
+      },
+      {
+        "P@100": 0.9917402385905425,
+        "P@200": 0.9795332016382097,
+        "P@50": 0.997922187973944,
+        "R@200": 0.3202247191011236,
+        "R@500": 0.5056179775280899,
+        "average_precision": 0.9700890330543346,
+        "average_precision_ci": {
+          "high": 0.9757791672882608,
+          "low": 0.962551051115547
+        },
+        "lift@100": 991.7402385905425,
+        "lift@200": 979.5332016382097,
+        "lift@50": 997.922187973944,
+        "negative_weight": 0.008328553272373496,
+        "roc_auc": 0.6882838045960438,
+        "target_rate": 0.001
+      },
+      {
+        "P@100": 0.9991685861417173,
+        "P@200": 0.9979167854635271,
+        "P@50": 0.9997920168453717,
+        "R@200": 0.3202247191011236,
+        "R@500": 0.5056179775280899,
+        "average_precision": 0.9968898123978591,
+        "average_precision_ci": {
+          "high": 0.9974944940009371,
+          "low": 0.9960824209248496
+        },
+        "lift@100": 9991.685861417172,
+        "lift@200": 9979.16785463527,
+        "lift@50": 9997.920168453717,
+        "negative_weight": 0.0008321056824783602,
+        "roc_auc": 0.6882838045960408,
+        "target_rate": 0.0001
+      }
+    ]
+  },
+  "uncertainty_fullscale": {
+    "abstention": {
+      "abstention_rate": 0.31448685026122375,
+      "n_abstained": 35515,
+      "novel_lost_to_abstention": 973,
+      "reasons": {
+        "high predictive uncertainty": 1982,
+        "high predictive uncertainty (would otherwise rank highly)": 1058,
+        "low data quality": 19572,
+        "no reliable distance information": 11793,
+        "no reliable distance information (would otherwise rank highly)": 1110
+      }
+    },
+    "all_objects": {
+      "P@100": 0.29,
+      "P@20": 0.45,
+      "P@50": 0.38,
+      "average_precision": 0.037299487330935494,
+      "roc_auc": 0.5524691635238387
+    },
+    "keep_most_confident_50pct": {
+      "P@100": 0.07,
+      "P@20": 0.1,
+      "P@50": 0.1,
+      "average_precision": 0.051712403299198864,
+      "n_kept": 56465,
+      "roc_auc": 0.6395530069904585
+    },
+    "keep_most_confident_75pct": {
+      "P@100": 0.07,
+      "P@20": 0.15,
+      "P@50": 0.1,
+      "average_precision": 0.037737485028092446,
+      "n_kept": 84697,
+      "roc_auc": 0.5887260593899096
+    },
+    "keep_most_confident_90pct": {
+      "P@100": 0.19,
+      "P@20": 0.45,
+      "P@50": 0.3,
+      "average_precision": 0.03648428549869881,
+      "n_kept": 101637,
+      "roc_auc": 0.5660487442139392
+    },
+    "mean_uncertainty_known": 0.2342799178760768,
+    "mean_uncertainty_novel": 0.1837593329463712,
+    "uncertainty_vs_novelty_auc": 0.4218860948293015
+  },
+  "uncertainty_matched": {
+    "abstention": {
+      "abstention_rate": 0.5545509342977697,
+      "n_abstained": 920,
+      "novel_lost_to_abstention": 152,
+      "reasons": {
+        "high predictive uncertainty": 21,
+        "high predictive uncertainty (would otherwise rank highly)": 25,
+        "low data quality": 301,
+        "no reliable distance information": 523,
+        "no reliable distance information (would otherwise rank highly)": 50
+      }
+    },
+    "all_objects": {
+      "P@100": 0.5,
+      "P@20": 0.95,
+      "P@50": 0.8,
+      "average_precision": 0.37523841999265517,
+      "roc_auc": 0.6882838045960442
+    },
+    "keep_most_confident_50pct": {
+      "P@100": 0.05,
+      "P@20": 0.0,
+      "P@50": 0.02,
+      "average_precision": 0.06295387414427195,
+      "n_kept": 830,
+      "roc_auc": 0.578222049689441
+    },
+    "keep_most_confident_75pct": {
+      "P@100": 0.02,
+      "P@20": 0.05,
+      "P@50": 0.04,
+      "average_precision": 0.04661847322253179,
+      "n_kept": 1244,
+      "roc_auc": 0.5096143018018018
+    },
+    "keep_most_confident_90pct": {
+      "P@100": 0.2,
+      "P@20": 0.7,
+      "P@50": 0.36,
+      "average_precision": 0.22099958299925343,
+      "n_kept": 1493,
+      "roc_auc": 0.6114186388554619
+    },
+    "mean_uncertainty_known": 0.0722986358667642,
+    "mean_uncertainty_novel": 0.26788317754912216,
+    "uncertainty_vs_novelty_auc": 0.7435683451054178
+  },
+  "weight_search": {
+    "baseline_v1_ap": 0.1458,
+    "baseline_v1_auc": 0.7496,
+    "n_combinations": 216,
+    "n_test": 114589,
+    "n_validation": 1568,
+    "selected_weights": {
+      "anomaly_score": 0.0,
+      "cc_weighted": 0.35,
+      "family_misfit": 0.0,
+      "neighbor_entropy": 0.1,
+      "novelty_gap": 0.0,
+      "physics_gap": 0.0,
+      "prior_entropy": 0.0,
+      "simplex_novelty": 0.4,
+      "taxonomy_gap": 1.0
+    },
+    "validation_ap": 0.2236,
+    "validation_auc": 0.8218
+  },
+  "weight_selection_optimism": {
+    "mean_ap_report": 0.19962184695197216,
+    "mean_ap_select": 0.24732012584259241,
+    "n_negative_optimism": 0,
+    "optimism_mean": 0.04769827889062023,
+    "optimism_std": 0.021368842647488322,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+}

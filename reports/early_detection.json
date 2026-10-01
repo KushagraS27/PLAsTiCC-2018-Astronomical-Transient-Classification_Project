@@ -1,0 +1,82 @@
+{
+  "protocol": "full-lightcurve models scored on truncated views (leakage-safe lower bound)",
+  "windows": [
+    {
+      "window": "15d",
+      "n_objects": 2106,
+      "n_novel": 196,
+      "roc_auc": 0.43680414574206644,
+      "average_precision": 0.08481105919050899,
+      "P@50": 0.12,
+      "R@200": 0.08673469387755102,
+      "elapsed_s": 4.0
+    },
+    {
+      "window": "30d",
+      "n_objects": 2106,
+      "n_novel": 196,
+      "roc_auc": 0.4589005235602095,
+      "average_precision": 0.08962592526195053,
+      "P@50": 0.1,
+      "R@200": 0.11224489795918367,
+      "elapsed_s": 4.0
+    },
+    {
+      "window": "60d",
+      "n_objects": 2106,
+      "n_novel": 196,
+      "roc_auc": 0.5172908430387861,
+      "average_precision": 0.10019847641195412,
+      "P@50": 0.1,
+      "R@200": 0.12755102040816327,
+      "elapsed_s": 4.2
+    },
+    {
+      "window": "120d",
+      "n_objects": 2106,
+      "n_novel": 196,
+      "roc_auc": 0.5218639811945721,
+      "average_precision": 0.0991772229934664,
+      "P@50": 0.04,
+      "R@200": 0.12244897959183673,
+      "elapsed_s": 4.3
+    },
+    {
+      "window": "full",
+      "n_objects": 2106,
+      "n_novel": 196,
+      "roc_auc": 0.5575836093599744,
+      "average_precision": 0.09971433805451824,
+      "P@50": 0.06,
+      "R@200": 0.07142857142857142,
+      "elapsed_s": 5.3
+    }
+  ],
+  "provenance": {
+    "cne_version": "2.0.0",
+    "codename": "domain-matched prior, hardened evaluation",
+    "seed": 42,
+    "libraries": {
+      "python": "3.13.14",
+      "platform": "Linux-6.1.158+-x86_64-with-glibc2.41",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.1",
+      "sklearn": "1.6.1",
+      "lightgbm": "4.7.0",
+      "pyarrow": "25.0.1",
+      "fastapi": "0.141.1"
+    },
+    "config_id": "cne-default",
+    "config_fingerprint": "a4f5949b24de7be6",
+    "manifest": "cne-v2-splits",
+    "dataset": "PLAsTiCC",
+    "windows": [
+      15,
+      30,
+      60,
+      120
+    ]
+  },
+  "elapsed_s": 22.1
+}
